@@ -1,16 +1,13 @@
 body{
 	margin: 0;
 	padding: 0;
+	background-color:#000000;
 }
 
 .globalHeader{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
-	max-height: 100px;
-	align-items: center;	
-}
-.headerContainer{
-	display: flex;
+	max-height: 100px;	
 }
 
 .headerLogo{
@@ -24,12 +21,13 @@ body{
 }
 
 .globalNav{
-	width: 100%;
-	height: 100px;
+	width: 40%;
+	display: flex;
+	align-items: center;
 }
 .navSearch{
 	align-items: center;
-	width: 100%;
+	width: 50%;
 	margin-left:  100px;
 	
 }
@@ -41,10 +39,13 @@ body{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
 }
+
 .headerContainer{
 	display: flex;
-}
+	align-items: center;
+	justify-content: space-around;
 
+}
 .headerLogo{
 	margin-left: 5%;
 	display: flex;
@@ -62,20 +63,57 @@ body{
 	display: flex;
 }
 #searchBtn{
-	width: 12.5%;
-	height: 60px;
-	background-image: url("");
+	border:none;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
 	background-color: transparent;
+}
+#searchBtn img{
+	width: 100%;
+}
+#searchBtn:hover{
+	background-color: grey;
+	border-radius: 5px;
+	transition: ease 500ms;
+}
+#searchBox{
+	height: 35px;
+	background-color: transparent;
+	border-left: 5px solid white;
+	border-right:none;
+	border-bottom: none;
+	border-top: none;
+	border-radius: 5px;
+	width: 35%;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	transition: ease 500ms;
+	padding-left: 5px;
+}
+#searchBox ::placeholder{
+	color:white;
+	opacity: 0.5;
+		
+}
+#searchBox:focus{
+	background-color: white;
+	border:none;
+	transition: ease 500ms;
+	width: 150%;
+	outline: none;
+	color: black;
 }
 
 .navList{
 	list-style: none;
 	display: flex;
 	align-content: center;
-	width: 105%;
+	width: 100%;
 }
 .listItem{
-	display: inline-block;
+	display: block;
 	font-size: 125%;
 	font-family: arial;
 	font-weight: bolder;
@@ -91,12 +129,10 @@ body{
 	color: aqua;
 	transition: ease 500ms;
 }
-
 .globalMenu{
-	height: 100px;
-	width: 10%;
-	align-items: center;
+	display: none;
 }
+
 .menuLine{
 	width: 30px;
 	height: 4px;
@@ -107,10 +143,17 @@ body{
 /* Mobile Resoponsive */
 
 @media all and (max-width: 480px){
-.headerLogo{
-	margin-left: 2%;
-	display: flex;
-	width: 10%;
-	height: 100px;
-}	
+	.globalNav{
+		flex-direction: column;
+	}
+	.headerContainer{
+		flex-direction: column;
+	}
+
+	.globalMenu{
+		display: block;		
+		position: absolute;
+		right: 15px;
+		top:15px;
+	}
 }
