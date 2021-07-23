@@ -1,0 +1,82 @@
+<<<<<<< HEAD
+
+.globalHeader{
+	background-color: #000000;
+	background-image: url("../Image/background1.gif");
+}
+.headerContainer{
+	display: flex;
+}
+
+
+.logoText{
+	color: #FFFFFF;
+	font-family: Verdana;
+	width: 25%;
+	padding-top: 2%;
+	padding-right: 20%;
+}
+
+.headerLogo{
+	margin-left: 5%;
+	display: flex;
+	width: 25%;
+	height: 100px;
+	
+}
+.headerLogo img{
+	height: 100%;
+}
+
+.globalNav{
+	width: 50%;
+}
+.navSearch{
+	background-color: aqua;
+	height: 100px;
+	width: 50%;
+}
+#searchBtn img{
+	width: 10%;
+=======
+
+.globalHeader{
+	background-color: #000000;
+	background-image: url("../Image/background1.gif");
+}
+.headerContainer{
+	display: flex;
+}
+
+
+.logoText{
+	color: #FFFFFF;
+	font-family: Verdana;
+	width: 25%;
+	padding-top: 2%;
+	padding-right: 20%;
+}
+
+.headerLogo{
+	margin-left: 5%;
+	display: flex;
+	width: 25%;
+	height: 100px;
+	
+}
+.headerLogo img{
+	height: 100%;
+}
+
+.globalNav{
+	width: 50%;
+}
+.navSearch{
+	background-color: aqua;
+	height: 100px;
+	width: 50%;
+}
+#searchBtn img{
+	width: 10%;
+>>>>>>> OnlineBookLibrary/master
+}
