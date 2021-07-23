@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 .globalHeader{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
@@ -38,7 +36,7 @@
 }
 #searchBtn img{
 	width: 10%;
-=======
+}
 
 .globalHeader{
 	background-color: #000000;
@@ -73,10 +71,35 @@
 }
 .navSearch{
 	background-color: aqua;
-	height: 100px;
+	height: 50px;
 	width: 50%;
 }
-#searchBtn img{
-	width: 10%;
->>>>>>> OnlineBookLibrary/master
+#searchBtn{
+	width: 50%;
+	height: 50%;
+	background-image: url("");
+	background-color: transparent;
+}
+
+.NavSearch{
+	display: flex;
+}
+.navList{
+	list-style: none;
+}
+.listItem{
+	display: inline-block;
+	font-size: 125%;
+	font-family: arial;
+	font-weight: bolder;
+	padding: 20px 10px;
+}
+.listItem a{
+	color: white;
+	text-decoration: none;
+}
+
+.listItem a:hover{
+	color: aqua;
+	transition: ease 500ms;
 }
