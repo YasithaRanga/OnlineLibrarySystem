@@ -1,38 +1,35 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
 .globalHeader{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
+	max-height: 100px;
+	align-items: center;	
 }
 .headerContainer{
 	display: flex;
 }
 
-
-.logoText{
-	color: #FFFFFF;
-	font-family: Verdana;
-	width: 25%;
-	padding-top: 2%;
-	padding-right: 20%;
-}
-
 .headerLogo{
-	margin-left: 5%;
+	margin-left: 2%;
 	display: flex;
-	width: 25%;
+	width: 15%;
 	height: 100px;
-	
 }
 .headerLogo img{
 	height: 100%;
 }
 
 .globalNav{
-	width: 50%;
+	width: 75%;
+	height: 100px;
 }
 .navSearch{
-	background-color: aqua;
-	height: 100px;
-	width: 50%;
+	align-items: center;
+	width: 25%;
 }
 #searchBtn img{
 	width: 10%;
@@ -46,15 +43,6 @@
 	display: flex;
 }
 
-
-.logoText{
-	color: #FFFFFF;
-	font-family: Verdana;
-	width: 25%;
-	padding-top: 2%;
-	padding-right: 20%;
-}
-
 .headerLogo{
 	margin-left: 5%;
 	display: flex;
@@ -66,26 +54,23 @@
 	height: 100%;
 }
 
-.globalNav{
-	width: 50%;
-}
 .navSearch{
-	background-color: aqua;
-	height: 50px;
+	height: 100px;
 	width: 50%;
+	display: flex;
 }
 #searchBtn{
-	width: 50%;
-	height: 50%;
+	width: 12.5%;
+	height: 60px;
 	background-image: url("");
 	background-color: transparent;
 }
 
-.NavSearch{
-	display: flex;
-}
 .navList{
 	list-style: none;
+	display: flex;
+	align-content: center;
+	
 }
 .listItem{
 	display: inline-block;
@@ -102,4 +87,28 @@
 .listItem a:hover{
 	color: aqua;
 	transition: ease 500ms;
+}
+
+#nav1{
+	text-align: left;
+}
+#nav2{
+	text-align: center;
+}
+.globalMenu{
+	height: 100px;
+	width: 10%;
+	align-items: center;
+}
+.menuLine{
+	width: 30px;
+	height: 4px;
+	background-color:white;
+	margin-bottom: 4px;
+}
+
+/* Mobile Resoponsive */
+
+@media all and (max-width: 480px){
+	
 }
