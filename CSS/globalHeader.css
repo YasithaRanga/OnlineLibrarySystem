@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color:#000000;
 }
 
 .globalHeader{
@@ -33,11 +32,6 @@ body{
 }
 #searchBtn img{
 	width: 10%;
-}
-
-.globalHeader{
-	background-color: #000000;
-	background-image: url("../Image/background1.gif");
 }
 
 .headerContainer{
@@ -91,6 +85,7 @@ body{
 	outline: none;
 	transition: ease 500ms;
 	padding-left: 5px;
+	color: white;
 }
 #searchBox ::placeholder{
 	color:white;
@@ -112,8 +107,8 @@ body{
 	align-content: center;
 	width: 100%;
 }
-.listItem{
-	display: block;
+.navList .listItem{
+	display: inline-block;
 	font-size: 125%;
 	font-family: arial;
 	font-weight: bolder;
@@ -123,11 +118,17 @@ body{
 .listItem a{
 	color: white;
 	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding:5px;
+	border-radius: 5px;
 }
 
 .listItem a:hover{
-	color: aqua;
+	color: black;
 	transition: ease 500ms;
+	background-color:white;
+	border-radius: 5px;
+	
 }
 .globalMenu{
 	display: none;
@@ -155,5 +156,74 @@ body{
 		position: absolute;
 		right: 15px;
 		top:15px;
+	}
+	.globalNav{
+		align-items: right;
+		width: 100%;
+	}
+	.navList{
+		
+		background-color: white;
+		list-style: none;
+		display: none;
+		width: 100%;
+		border-radius:0px 0px 15px 15px;
+		top:15px;
+	}
+	.navList .listItem{
+		display: block;
+		font-size: 90%;
+		font-family: arial;
+		font-weight: bolder;
+		width:100%;
+	}
+	.navList a{
+		color: black;
+	}
+	.headerLogo{	
+		align-self:start;
+		display: flex;
+		width: 15%;
+		height: 75px;
+	}
+	.globalHeader{
+		max-height: 75px;	
+	}
+	.listItem a{
+		color: black;
+		text-decoration: none;
+		border-bottom: 1px solid black;
+		padding:5px;
+		border-radius: 5px;
+	}
+
+	.listItem a:hover{
+		color: white;
+		transition: ease 500ms;
+		background-color:black;
+		border-radius: 5px;
+	
+	}
+	.navSearch{
+		height: 50px;
+		width: 100%;
+		display: flex;
+		padding-left: 0;
+		margin-left: 0;
+		background-color: black;
+	}
+	
+	.active{
+		display: block;
+		transition: ease 50000ms;
+	}
+	.headerLogo{
+		width: 40%;
+	}
+	.headerLogo a{
+		width: 40%;
+	}
+	#searchBox{
+		color: white;
 	}
 }

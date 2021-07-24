@@ -10,11 +10,13 @@
 		<div class="headerContainer">
 			<!-- Logo -->
 			<div class="headerLogo">
-				<a href="index.html"><img src="Image/Logo.png"></a>
+				<a href="index.html">
+					<img href="index.html" src="Image/Logo.png">
+				</a>
 			</div>
 			<!-- Global Navigation bar -->
 			<div class="globalNav">
-				<ul class="navList" id="nav1">
+				<ul class="navList" id="navList">
 					<li class="listItem"> <a href="#">Home</a></li>
 					<li class="listItem">
 						<a href="#">Categories</a>
@@ -23,7 +25,7 @@
 						<a href="#">Contact Us</a>
 					</li>
 				</ul>
-				<div class="globalMenu">
+				<div class="globalMenu" id="toggleBtn">
 					<div class="menuLine"></div>
 					<div class="menuLine"></div>
 					<div class="menuLine"></div>
@@ -48,4 +50,14 @@
 		
 	</footer>
 </body>
+	<!-- Mobile Navigation Script -->
+	<script>
+		const toggleBtn = document.getElementById('toggleBtn');
+		const navList = document.getElementById('navList');
+	
+		toggleBtn.addEventListener('click', () =>{
+			navList.classList.toggle('active');
+		})
+	
+	</script>
 </html>
