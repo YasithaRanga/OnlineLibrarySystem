@@ -2,7 +2,10 @@ body{
 	margin: 0;
 	padding: 0;
 }
-
+.content{
+	width:75%;
+	margin: auto;
+}
 .globalHeader{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
@@ -147,7 +150,10 @@ body{
 /* Mobile Resoponsive */
 
 @media all and (max-width: 480px){
-	.globalHeader{
+	
+	.content{
+		width:60%;
+		margin: auto;
 	}
 	.globalNav{
 		z-index: 1000;
@@ -168,7 +174,7 @@ body{
 		width: 100%;
 	}
 	.navList{
-		
+		margin-bottom: -5px;
 		background-color: white;
 		list-style: none;
 		display: none;
@@ -214,7 +220,7 @@ body{
 		height: 50px;
 		width: 100%;
 		display: flex;
-		padding-left: 0;
+		padding-left: 5%;
 		margin-left: 0;
 		background-color: black;
 		z-index: 1000;
@@ -222,7 +228,6 @@ body{
 	
 	.active{
 		display: block;
-		transition: ease 50000ms;
 	}
 	.headerLogo{
 		width: 40%;
