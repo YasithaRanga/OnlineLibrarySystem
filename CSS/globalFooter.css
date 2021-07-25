@@ -1,12 +1,11 @@
 .footerContainer{
 	width: 100%;
-	background-color: red;
 	display: flex;
+	background-image: url("../Image/background1.gif");
 }
 .logoAndInfo{
 	width: 50%;
 	padding: 2%;
-	background-color: black;
 	color: white;
 	font-family: arial;
 	text-align: left;
@@ -21,9 +20,48 @@
 .quickLinks{
 	padding: 2%;
 	width: 50%;
-	background-color: aqua;
 	display: flex;
 }
+
+.footerLink{
+	margin-right: 4%;
+	width: 25%;
+}
+#quickMainTitle{
+	text-decoration:none;
+	padding-bottom: 2px;
+	border-bottom: white solid 3px;
+	color:white;
+	font-size:125%;
+	font-family: arial;
+	font-weight: bolder;
+	
+}
+.quickSubTitle{
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 10px;
+	transition: ease 500ms;
+}
+
+#quickSubTitle{
+	color: white;
+	font-family: arial;
+	text-decoration: none;
+	transition: ease 500ms;
+}
+#quickSubTitle:hover{
+	border-radius: 5px;
+	padding: 10px;
+	color: black;
+	font-family: arial;
+	text-decoration: none;
+	transition: ease 500ms;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
 
 @media all and (max-width:480px){
 	.footerLogo{
