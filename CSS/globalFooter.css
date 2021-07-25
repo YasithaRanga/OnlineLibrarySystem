@@ -4,7 +4,7 @@
 	background-image: url("../Image/background1.gif");
 }
 .logoAndInfo{
-	width: 50%;
+	width: 40%;
 	padding: 2%;
 	color: white;
 	font-family: arial;
@@ -19,12 +19,12 @@
 
 .quickLinks{
 	padding: 2%;
-	width: 50%;
+	width: 60%;
 	display: flex;
 }
 
 .footerLink{
-	margin-right: 4%;
+	margin-right: 20px;
 	width: 25%;
 }
 #quickMainTitle{
@@ -40,7 +40,7 @@
 .quickSubTitle{
 	border-radius: 5px;
 	margin-top: 20px;
-	padding: 10px;
+	padding-top: 10px;
 	transition: ease 500ms;
 }
 
@@ -72,5 +72,16 @@
 	}
 	.footerContainer{
 		margin-top: 30px;
+	}
+	.footerLink{
+		width:60%;
+	}
+	.quickLinks{
+		width: 60%;
+		font-size: 75%;
+	}
+	#quickSubTitle:hover{
+		font-weight: bolder;
+		font-size: 100%;
 	}
 }

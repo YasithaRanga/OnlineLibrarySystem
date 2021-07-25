@@ -6,9 +6,8 @@ body{
 .globalHeader{
 	background-color: #000000;
 	background-image: url("../Image/background1.gif");
-	max-height: 100px;	
+	max-height: 100px;
 }
-
 .headerLogo{
 	margin-left: 2%;
 	display: flex;
@@ -18,6 +17,9 @@ body{
 .headerLogo img{
 	height: 100%;
 }
+.headerLogo a{
+		width: 75%;
+	}
 
 .globalNav{
 	width: 40%;
@@ -105,7 +107,7 @@ body{
 	list-style: none;
 	display: flex;
 	align-content: center;
-	width: 100%;
+	width: 125%;
 }
 .navList .listItem{
 	display: inline-block;
@@ -144,7 +146,10 @@ body{
 /* Mobile Resoponsive */
 
 @media all and (max-width: 480px){
+	.globalHeader{
+	}
 	.globalNav{
+		z-index: 1000;
 		flex-direction: column;
 	}
 	.headerContainer{
@@ -187,7 +192,7 @@ body{
 		height: 75px;
 	}
 	.globalHeader{
-		max-height: 75px;	
+		max-height: 125px;
 	}
 	.listItem a{
 		color: black;
@@ -211,6 +216,7 @@ body{
 		padding-left: 0;
 		margin-left: 0;
 		background-color: black;
+		z-index: 1000;
 	}
 	
 	.active{
@@ -221,7 +227,7 @@ body{
 		width: 40%;
 	}
 	.headerLogo a{
-		width: 40%;
+		width: 15%;
 	}
 	#searchBox{
 		color: white;
