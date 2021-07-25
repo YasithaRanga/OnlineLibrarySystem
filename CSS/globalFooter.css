@@ -1,2 +1,38 @@
-/* CSS Document */
+.footerContainer{
+	width: 100%;
+	background-color: red;
+	display: flex;
+}
+.logoAndInfo{
+	width: 50%;
+	padding: 2%;
+	background-color: black;
+	color: white;
+	font-family: arial;
+	text-align: left;
+}
+.footerLogo{
+	width: 35%;
+}
+.footerLogo img{
+	width: 100%;
+}
 
+.quickLinks{
+	padding: 2%;
+	width: 50%;
+	background-color: aqua;
+	display: flex;
+}
+
+@media all and (max-width:480px){
+	.footerLogo{
+		width: 75%;
+	}
+	.logoAndInfo{
+		font-size: 75%;
+	}
+	.footerContainer{
+		margin-top: 30px;
+	}
+}
