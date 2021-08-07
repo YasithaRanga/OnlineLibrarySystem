@@ -1,7 +1,5 @@
-<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
 <title>Home | Abditory</title>
 	<!-- Global Header and Footer stylesheets -->
 	<link rel="stylesheet" type="text/css" href="CSS/globalHeader.css">
@@ -20,7 +18,7 @@
 
 </head>
 <body>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.html"); ?>
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/OnlineLibrarySystem/assets/"; include($IPATH."globalHeader.html"); ?>
 	<!-- Page Content --->
 <div class="content">
   <h1>Content</h1>
@@ -67,48 +65,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 	
 	
 	<!-- Global Footer --->
-<footer class="globalFooter">
-		<div class="footerContainer">
-			<div class="logoAndInfo">
-				<div class="footerLogo"><img src="Image/Logo.png"></div>
-				<p class="footerDescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-			</div>
-			<div class="quickLinks" id="quickLinks">
-				<div class="footerLink">
-					<a href="#" id="quickMainTitle">Categories</a>
-					<div class="quickSubTitle">
-						<a href="#" id="quickSubTitle">Fantacy</a>
-					</div>
-					<div class="quickSubTitle">
-						<a href="#" id="quickSubTitle">Romance</a>
-					</div>
-				</div>
-				<div class="footerLink">
-					<a href="#" id="quickMainTitle">Contact</a>
-					<div class="quickSubTitle">
-						<a href="#" id="quickSubTitle">E-mail Us</a>
-					</div>
-					<div class="quickSubTitle">
-						<a href="#" id="quickSubTitle">Call Us</a>
-					</div>
-					<div class="quickSubTitle">
-						<a href="#" id="quickSubTitle">Send a Text</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bottomFooter">
-			<div class="copyrightSection">
-				
-			</div>
-			<div class="importantLinks">
-			
-			</div>
-			<div class="logoWithName">
-			
-			</div>
-		</div>
-	</footer>
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/OnlineLibrarySystem/assets/"; include($IPATH."globalFooter.html"); ?>
 </body>
 	<!-- Mobile Navigation Script -->
 	<script type="text/javascript" src="JS/mobileNav.js"></script>
