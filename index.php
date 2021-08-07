@@ -18,7 +18,7 @@
 
 </head>
 <body>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/OnlineLibrarySystem/assets/"; include($IPATH."globalHeader.html"); ?>
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.html"); ?>
 	<!-- Page Content --->
 <div class="content">
   <h1>Content</h1>
@@ -65,7 +65,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 	
 	
 	<!-- Global Footer --->
-<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/OnlineLibrarySystem/assets/"; include($IPATH."globalFooter.html"); ?>
+<?php include($IPATH."globalFooter.html"); ?>
 </body>
 	<!-- Mobile Navigation Script -->
 	<script type="text/javascript" src="JS/mobileNav.js"></script>

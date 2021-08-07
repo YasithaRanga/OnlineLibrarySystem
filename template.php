@@ -41,7 +41,7 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li class="listItem">
-						<a href="categories.html">Categories</a>
+						<a href="categories.php">Categories</a>
 		 	 		</li>
 					<li class="listItem">
 						<a href="contact.html">Contact Us</a>
@@ -117,7 +117,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 			</div>
 			<div class="quickLinks" id="quickLinks">
 				<div class="footerLink">
-					<a href="categories.html" id="quickMainTitle">Categories</a>
+					<a href="categories.php" id="quickMainTitle">Categories</a>
 					<div class="quickSubTitle">
 						<a href="fantacy.html" id="quickSubTitle">Fantacy</a>
 					</div>
