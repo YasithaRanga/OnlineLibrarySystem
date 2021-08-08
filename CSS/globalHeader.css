@@ -106,6 +106,9 @@ body{
 	outline: none;
 	color: black;
 }
+#searchBoxForm{
+	display: flex;
+}
 
 .navList{
 	list-style: none;
