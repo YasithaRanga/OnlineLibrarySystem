@@ -1,23 +1,13 @@
 <html>
 <head>
 <title>Home | Abditory</title>
-	<!-- Global Header and Footer stylesheets -->
-	<link rel="stylesheet" type="text/css" href="CSS/globalHeader.css">
-	<link rel="stylesheet" type="text/css" href="CSS/globalFooter.css">
-	<!-------------- ---------------------->
-	
-	
-	<!-- Global back to top button stylesheet -->
-	<link rel="stylesheet" type="text/css" href="CSS/globalBackToTopButton.css">
-	<!-------------- ---------------------->
-	
 	<!-- this page stylesheet --
 	<link rel="stylesheet" type="text/css" href="">
 	>
 	<!-------------- ---------------------->
 
-</head>
-<body>
+	
+	
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.html"); ?>
 	<!-- Page Content --->
 <div class="content">
@@ -66,7 +56,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 	
 	<!-- Global Footer --->
 <?php include($IPATH."globalFooter.html"); ?>
-</body>
-	<!-- Mobile Navigation Script -->
-	<script type="text/javascript" src="JS/mobileNav.js"></script>
+	
+
 </html>
