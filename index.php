@@ -6,8 +6,7 @@
 	>
 	<!-------------- ---------------------->
 
-	
-	
+	<!--- php call for globalHeader.html----->
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.html"); ?>
 	<!-- Page Content --->
 <div class="content">
@@ -54,7 +53,8 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 		</div>
 	
 	
-	<!-- Global Footer --->
+
+<!--- php call for globalFooter.html----->
 <?php include($IPATH."globalFooter.html"); ?>
 	
 
