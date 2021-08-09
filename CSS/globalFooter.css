@@ -24,8 +24,8 @@
 }
 
 .footerLink{
-	margin-right: 20px;
-	width: 25%;
+	margin-right:0px;
+	width: 100%;
 }
 #quickMainTitle{
 	text-decoration:none;
@@ -52,7 +52,7 @@
 }
 #quickSubTitle:hover{
 	border-radius: 5px;
-	padding: 10px;
+	padding: 20px;
 	color: black;
 	font-family: arial;
 	text-decoration: none;
@@ -69,19 +69,29 @@
 	}
 	.logoAndInfo{
 		font-size: 75%;
+		width: 50%;
 	}
 	.footerContainer{
 		margin-top: 30px;
 	}
 	.footerLink{
-		width:60%;
+		width:100%;
+		margin-right: 0;
 	}
 	.quickLinks{
-		width: 60%;
-		font-size: 75%;
+		width: 70%;
+		margin:0;
+	}
+	#quickMainTitle{
+		font-size: 15px;
+	}
+	#quickSubTitle{
+		font-size: 12px;
 	}
 	#quickSubTitle:hover{
+		padding: 10px;
 		font-weight: bolder;
-		font-size: 100%;
+		font-size: 13px;
+		width: 50%; 
 	}
 }
