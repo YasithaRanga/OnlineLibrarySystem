@@ -13,7 +13,7 @@
 	<!-- Page Content --->
 <div class="content">
   <h1>Welcome, Abditory Picks for you</h1>
-	<?php include($IPATH."abditoryPicks.html"); ?>		
+	<?php include($IPATH."abditoryPicks.php"); ?>		
 	
 </div>
 

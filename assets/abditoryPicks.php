@@ -6,7 +6,7 @@
 		<span class="slider-span" id="slider-span5"></span>
 		<span class="slider-span" id="slider-span6"></span>
 		<span class="slider-span" id="slider-span7"></span>
-
+	
 		<div class="image-slider">
 			<div id="sliderContainer">
 				<div class="slides-div" id="slide-1">

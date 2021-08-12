@@ -9,18 +9,20 @@ html{
 	align-items: center;
 	margin: auto;
 	justify-content: center;
-	width: 150px;
+	width: 240px;
+	display: flex;
 	
 }
 #btnDownload{
-	margin-right: 5px;
-	margin-top: 10px;
+	margin: 10px auto 10px auto;
 	background-color: white;
 	padding: 10px;
 	color: black;
 	border-radius: 5px;
 	border-style: none;
 	transition: ease 500ms;
+	font-size: 16px;
+	display: block;
 }
 #btnDownload:hover{
 	background-color: black;
@@ -29,13 +31,15 @@ html{
 	font-weight: bolder;
 }
 #btnRead{
-	margin-top: 10px;
+	margin: 10px auto 10px auto;
 	background-color: white;
 	padding: 10px;
 	color: black;
 	border-radius: 5px;
 	border-style: none;
 	transition: ease 500ms;
+	font-size: 16px;
+	display: block;
 }
 #btnRead:hover{
 	background-color: black;
@@ -151,13 +155,13 @@ html{
 	filter: saturate(100%);
 }
 
-#slider-span1:target ~ .image-slider {left: 70%;}
-#slider-span2:target ~ .image-slider {left: 50%;}
-#slider-span3:target ~ .image-slider {left: 25%;}
+#slider-span1:target ~ .image-slider {left: 50%;}
+#slider-span2:target ~ .image-slider {left: 30%;}
+#slider-span3:target ~ .image-slider {left: 15%;}
 
-#slider-span5:target ~ .image-slider {left: -25%;}
-#slider-span6:target ~ .image-slider {left: -50%;}
-#slider-span7:target ~ .image-slider {left: -70%;}
+#slider-span5:target ~ .image-slider {left: -15%;}
+#slider-span6:target ~ .image-slider {left: -30%;}
+#slider-span7:target ~ .image-slider {left: -45%;}
 
 @media all and (max-width: 480px){
 	.slide-container{
