@@ -22,7 +22,7 @@
 				?>
 				<div id="sliderContainer">
 					<div class="slides-div" id="slide-1">
-						<img src="../Image/ZoomSlider/img1.jpg" alt="" class="img" id="img1">
+						<img src="../resources/pdf/coverpage/<?php echo $row['image']; ?>" alt="" class="img" id="img1">
 						<a href="#slider-span1" class="button" id="button-1"></a> 
 					</div>
 					<div class="bookTitleContainer">
