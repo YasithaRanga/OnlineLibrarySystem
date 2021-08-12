@@ -11,10 +11,22 @@ html{
 	justify-content: center;
 	width: 240px;
 	display: flex;
-	
 }
-#btnDownload{
+.userButtons a{
+	text-decoration: none;
+}
+
+.bookTitleContainer{
+	width: 240px;
 	margin: 10px auto 10px auto;
+	display: block;
+}
+#bookTitle{
+	text-align: center;
+}
+
+#btnDownload{
+	margin: 10px 5px 10px auto;
 	background-color: white;
 	padding: 10px;
 	color: black;
@@ -31,7 +43,7 @@ html{
 	font-weight: bolder;
 }
 #btnRead{
-	margin: 10px auto 10px auto;
+	margin: 10px auto 10px 5px;
 	background-color: white;
 	padding: 10px;
 	color: black;
@@ -49,10 +61,9 @@ html{
 }
 
 .slide-container{
-	margin-top: 10px;
 	margin-bottom: 20px;
 	width:100%;
-	height: 600px;
+	height: 500px;
 	display: flex;
 	align-items: center;
 	overflow: hiiden;
@@ -60,7 +71,7 @@ html{
 
 .image-slider{
 	width: 100%;
-	height: 600px;
+	height: 500px;
 	position: absolute;
 	left: 0;
 	display: flex;
@@ -100,8 +111,8 @@ html{
 
 #slider-span1:target ~ .image-slider #img1,
 #slider-span1:target ~ .image-slider #button-1{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
@@ -109,48 +120,48 @@ html{
 
 #slider-span2:target ~ .image-slider #img2,
 #slider-span2:target ~ .image-slider #button-2{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
 
 #slider-span3:target ~ .image-slider #img3,
 #slider-span3:target ~ .image-slider #button-3{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
 
 #slider-span4:target ~ .image-slider #img4,
 #slider-span4:target ~ .image-slider #button-4{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
 
 #slider-span5:target ~ .image-slider #img5,
 #slider-span5:target ~ .image-slider #button-5{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
 
 #slider-span6:target ~ .image-slider #img6,
 #slider-span6:target ~ .image-slider #button-6{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
 
 #slider-span7:target ~ .image-slider #img7,
 #slider-span7:target ~ .image-slider #button-7{
-	width: 380px;
-	height: 585px;
+	width: 300px;
+	height: 462.5px;
 	background-color: transparent;
 	filter: saturate(100%);
 }
@@ -165,26 +176,26 @@ html{
 
 @media all and (max-width: 480px){
 	.slide-container{
-	width:100%;
-	height: 250px;
+		width:100%;
+		height: 250px;
 	}
 
 	.userButtons{
-	align-items: center;
-	margin: auto;
-	justify-content: center;
-	width: 100px;
-	height: 100px;
+		align-items: center;
+		margin: auto;
+		justify-content: center;
+		width: 100px;
+		height: 100px;
 	}
 	
 	#btnDownload{
-	width: 55px;
-	background-color: white;
-	color: black;
-	border-radius: 5px;
-	border-style: none;
-	transition: ease 500ms;
-	font-size: 7px;
+		width: 55px;
+		background-color: white;
+		color: black;
+		border-radius: 5px;
+		border-style: none;
+		transition: ease 500ms;
+		font-size: 7px;
 	}
 	
 	#btnDownload:hover{
@@ -208,28 +219,28 @@ html{
 	}
 	
 	.image-slider{
-	width: 100%;
-	height: 250px;
-	position: absolute;
-	left: 0;
+		width: 100%;
+		height: 250px;
+		position: absolute;
+		left: 0;
 	}
 
 	.img{
-	position: relative;
-	width: 120px;
-	height: 185px;
+		position: relative;
+		width: 120px;
+		height: 185px;
 	}
 	
 	.button{
-	width: 120px;
-	height: 185px;
+		width: 120px;
+		height: 185px;
 	}
 	
 	.slides-div{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 10px 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 10px 0 10px;
 	}
 	
 	#slider-span1:target ~ .image-slider #img1,
