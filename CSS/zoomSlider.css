@@ -100,8 +100,6 @@ html{
 	height: 585px;
 	background-color: transparent;
 	filter: saturate(100%);
-	
-	scroll-margin-bottom:500px;
 }
 
 
@@ -163,10 +161,8 @@ html{
 
 @media all and (max-width: 480px){
 	.slide-container{
-	margin-top: 10px;
-	margin-bottom: 20px;
 	width:100%;
-	height: 400px;
+	height: 250px;
 	}
 
 	.userButtons{
@@ -174,11 +170,42 @@ html{
 	margin: auto;
 	justify-content: center;
 	width: 100px;
+	height: 100px;
 	}
-
+	
+	#btnDownload{
+	width: 55px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border-style: none;
+	transition: ease 500ms;
+	font-size: 7px;
+	}
+	
+	#btnDownload:hover{
+		background-color: black;
+		color: white;
+		transition: ease 500ms;
+	}
+	#btnRead{
+		width: 35px;
+		background-color: white;
+		color: black;
+		border-radius: 5px;
+		border-style: none;
+		transition: ease 500ms;
+		font-size: 7px;
+	}
+	#btnRead:hover{
+		background-color: black;
+		color: white;
+		transition: ease 500ms;
+	}
+	
 	.image-slider{
 	width: 100%;
-	height: 400px;
+	height: 250px;
 	position: absolute;
 	left: 0;
 	}
@@ -188,4 +215,68 @@ html{
 	width: 120px;
 	height: 185px;
 	}
+	
+	.button{
+	width: 120px;
+	height: 185px;
+	}
+	
+	.slides-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px 0 10px;
+	}
+	
+	#slider-span1:target ~ .image-slider #img1,
+	#slider-span1:target ~ .image-slider #button-1{
+		width: 150px;
+		height: 231.25px;
+	}
+
+
+	#slider-span2:target ~ .image-slider #img2,
+	#slider-span2:target ~ .image-slider #button-2{
+		width: 150px;
+		height: 231.25px;
+	}
+
+	#slider-span3:target ~ .image-slider #img3,
+	#slider-span3:target ~ .image-slider #button-3{
+		width: 150px;
+		height: 231.25px;
+	}
+
+	#slider-span4:target ~ .image-slider #img4,
+	#slider-span4:target ~ .image-slider #button-4{
+		width: 150px;
+		height: 231.25px;
+	}
+
+	#slider-span5:target ~ .image-slider #img5,
+	#slider-span5:target ~ .image-slider #button-5{
+		width: 150px;
+		height: 231.25px;
+	}
+
+	#slider-span6:target ~ .image-slider #img6,
+	#slider-span6:target ~ .image-slider #button-6{
+		width: 150px;
+		height: 231.25px;
+	}
+
+	#slider-span7:target ~ .image-slider #img7,
+	#slider-span7:target ~ .image-slider #button-7{
+		width: 150px;
+		height: 231.25px;
+	}
+	
+	#slider-span1:target ~ .image-slider {left: 185%;margin-top:60px;}
+	#slider-span2:target ~ .image-slider {left: 125%;margin-top:60px;}
+	#slider-span3:target ~ .image-slider {left: 63%;margin-top:60px;}
+
+	#slider-span5:target ~ .image-slider {left: -63%;margin-top:60px;}
+	#slider-span6:target ~ .image-slider {left: -125%;margin-top:60px;}
+	#slider-span7:target ~ .image-slider {left: -185%;margin-top:60px;}
+
 }
