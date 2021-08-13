@@ -23,7 +23,10 @@ html{
 }
 #bookTitle{
 	text-align: center;
+	font-family: arial;
+	color:white;
 }
+
 
 #btnDownload{
 	margin: 10px 5px 10px auto;
