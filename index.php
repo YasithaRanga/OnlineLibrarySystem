@@ -15,6 +15,9 @@
   <h1>Welcome, Abditory Picks for you</h1>
 	<?php include($IPATH."abditoryPicks.php"); ?>		
 	
+	
+  <h1>Most Popular</h1>
+	<?php include($IPATH."MostPopular.php"); ?>	
 </div>
 
 <!--- php call for globalFooter.html----->

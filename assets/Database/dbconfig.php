@@ -7,7 +7,7 @@ $db_name = "abditory";
 
 $connection = mysqli_connect($server_name,$db_username,$db_password);
 $dbconfig = mysqli_select_db($connection,$db_name);
-
+/*
 if($dbconfig)
 {
 	echo "Database connected";
@@ -16,7 +16,7 @@ else
 {
 	echo "Database connection failed!";
 }
-
+*/
 
 
 
