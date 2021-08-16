@@ -16,6 +16,11 @@
   		<h1 id="mainTitle">Most Popular</h1>
 		<?php include($IPATH."MostPopular.php"); ?>
 	</div>
+	
+	<div class="section" id="section3">
+  		<h1 id="mainTitle">Latest</h1>
+		<?php include($IPATH."latest.php"); ?>
+	</div>
 </div>
 
 <!--- php call for globalFooter.html----->
