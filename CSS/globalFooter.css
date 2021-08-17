@@ -52,14 +52,14 @@
 }
 #quickSubTitle:hover{
 	border-radius: 5px;
-	padding: 20px;
+	padding: 10px;
 	color: black;
 	font-family: arial;
 	text-decoration: none;
 	transition: ease 500ms;
 	background-color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 

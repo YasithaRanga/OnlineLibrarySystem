@@ -1,10 +1,15 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<title>Abditory | Categories</title>
 
-<body>
-</body>
+<!--- php call for globalHeader.html----->
+<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.php"); ?>
+	
+	
+
+	
+<!--- php call for globalFooter.html----->
+<?php include($IPATH."globalFooter.html"); ?>
+
 </html>
