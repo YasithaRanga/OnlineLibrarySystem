@@ -1,20 +1,20 @@
 <!doctype html>
 <html>
 <head>
-<title>Abditory | Education</title>
+<title>Abditory | Lifestyle</title>
 
 <!--- php call for globalHeader.html----->
 <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.php"); ?>
 
 <div class="content">
 	<div class="section" id="section2">
-			<h1 id="mainTitle">Education</h1>
+			<h1 id="mainTitle">Lifestyle</h1>
 			<div class="categoryContainer">
 				
 			<?php
 				require '../assets/Database/dbconfig.php';
 				
-				$query = "SELECT * FROM books WHERE category = 'Education'";
+				$query = "SELECT * FROM books WHERE category = 'Lifestyle'";
 				$query_run = mysqli_query($connection, $query);
 				$check_category = mysqli_num_rows($query_run) > 0;		
 				if($check_category)

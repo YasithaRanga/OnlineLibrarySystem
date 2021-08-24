@@ -8,7 +8,7 @@
 
 <div class="content">
 	<div class="section" id="section2">
-			<h1 id="mainTitle">Education</h1>
+			<h1 id="mainTitle">Romance</h1>
 			<div class="categoryContainer">
 				
 			<?php
@@ -31,10 +31,10 @@
 								<h2><?php echo $row['bookName'] ?></h2>
 							</div>
 							<div class="categoryButton">
-								<a href="<?php echo $row['downloadLink'] ?>">
+								<a href="<?php echo $row['downloadLink'] ?>" target="_blank">
 									<button class="categoryLink">Download</button>
 								</a>
-								<a href="<?php echo $row['readLink'] ?>">
+								<a href="<?php echo $row['readLink'] ?>" target="_blank">
 									<button class="categoryLink">Read</button>
 								</a>
 							</div>

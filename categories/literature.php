@@ -1,20 +1,20 @@
 <!doctype html>
 <html>
 <head>
-<title>Abditory | Adventure</title>
+<title>Abditory | Literature</title>
 
 <!--- php call for globalHeader.html----->
 <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.php"); ?>
 
 <div class="content">
 	<div class="section" id="section2">
-			<h1 id="mainTitle">Education</h1>
+			<h1 id="mainTitle">Literature</h1>
 			<div class="categoryContainer">
 				
 			<?php
 				require '../assets/Database/dbconfig.php';
 				
-				$query = "SELECT * FROM books WHERE category = 'Romance'";
+				$query = "SELECT * FROM books WHERE category = 'Literature'";
 				$query_run = mysqli_query($connection, $query);
 				$check_category = mysqli_num_rows($query_run) > 0;		
 				if($check_category)
@@ -31,10 +31,10 @@
 								<h2><?php echo $row['bookName'] ?></h2>
 							</div>
 							<div class="categoryButton">
-								<a href="<?php echo $row['downloadLink'] ?>">
+								<a href="<?php echo $row['downloadLink'] ?>" target="_blank">
 									<button class="categoryLink">Download</button>
 								</a>
-								<a href="<?php echo $row['readLink'] ?>">
+								<a href="<?php echo $row['readLink'] ?>" target="_blank">
 									<button class="categoryLink">Read</button>
 								</a>
 							</div>
