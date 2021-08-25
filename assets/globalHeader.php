@@ -1,15 +1,27 @@
+	<!---- Favicon ----->
+	<link rel="shortcut icon" type="image/jpg" href="../Image/favicon.png">
+
 	<!--- Content ------------>
 	<link rel="stylesheet" type="text/css" href="../CSS/content.css">
 
-<!-- Global Header stylesheets -->
+	<!-- Global Header stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../CSS/globalHeader.css">
 	<!-------------- ---------------------->
-	<!--- Zoom Slider ---->
+	
+	<!--- Zoom Sliders ---->
+	<link rel ="stylesheet" type="text/css" href="../CSS/latest.css">
+	<link rel ="stylesheet" type="text/css" href="../CSS/MostPopular.css">
 	<link rel ="stylesheet" type="text/css" href="../CSS/abditoryPicks.css">	
+	
 	<!-- Global back to top button stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../CSS/globalBackToTopButton.css">
 	<!-------------- ---------------------->
+
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	
+	<!--- CSS for Footer -->
+	<link rel="stylesheet" type="text/css" href="../CSS/globalFooter.css">
+
 </head>
 <body>
 
@@ -23,7 +35,7 @@
 		<div class="headerContainer">
 			<!-- Logo -->
 			<div class="headerLogo">
-				<a href="index.php">
+				<a href="../index.php">
 					<img src="../Image/Logo.png">
 				</a>
 			</div>
@@ -47,14 +59,14 @@
 				</div>
 			</div>
 			<div class="navSearch">
-				<form name="seachBoxForm" id="searchBoxForm" method="post">
+				<form name="seachBoxForm" id="searchBoxForm" method="post" action="../search.php">
 					<table id="searchTable">
 						<tr>
 							<td>
-								<button id="searchBtn"><img src="../Image/searchIcon.png"></button>
+								<button type="submit" id="searchBtn"><img src="../Image/searchIcon.png"></button>
 							</td>
 							<td>
-								<input id="searchBox" type="search" placeholder="Search">
+								<input id="searchBox" name="searchTerm" type="search" placeholder="Search">
 							</td>
 						</tr>
 					</table>

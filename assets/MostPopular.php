@@ -195,5 +195,4 @@
 			?>
 		</div>
 	</div>
-<link rel ="stylesheet" type="text/css" href="../CSS/MostPopular.css">
 

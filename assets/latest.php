@@ -1,6 +1,6 @@
 
 
-<div class="slide-container">
+	<div class="slide-container">
 		<span class="slider-span" id="slider-span15"></span>
 		<span class="slider-span" id="slider-span16"></span>
 		<span class="slider-span" id="slider-span17"></span>
@@ -195,5 +195,4 @@
 			?>
 		</div>
 	</div>
-<link rel ="stylesheet" type="text/css" href="../CSS/latest.css">
 
