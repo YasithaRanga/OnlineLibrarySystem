@@ -12,6 +12,36 @@
 		<?php include($IPATH."abditoryPicks.php"); ?>		
 	</div>	
 	
+	
+	<div class="sectionBOD" id="bookOfTheDay">
+		<?php
+			require 'assets/database/dbconfig.php';
+			$query = "SELECT * FROM books WHERE bookID=10";
+			$query_run = mysqli_query($connection,$query);
+			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
+			$row = mysqli_fetch_assoc($query_run);
+			if($check_abditoryPicks)
+			{
+				?>
+		
+					<div class="bookOfTheDayMain" id="leftSectionBOD">
+						<h1 id="mainTitleBOD">Book of The Day</h1>
+ 						<img src="../resources/pdf/coverpage/<?php echo $row['image']; ?>">
+					</div>
+					<div class="bookOfTheDayMain" id="rightSectionBOD">
+						<h1 id="BODTitle"><?php echo $row['bookName']; ?></h1>
+						<div class="userButtonsBOD">
+							<a href="<?php echo $row['downloadLink']; ?>" target="_blank"><button id="btnDownloadBOD">Download</button></a>
+							<a href="<?php echo $row['readLink']; ?>" target="_blank"><button id="btnReadBOD">Read</button></a>
+						</div>
+					</div>
+			<?php
+			}
+			?>
+		
+	</div>
+		
+		
 	<div class="section" id="section2">
   		<h1 id="mainTitle">Most Popular</h1>
 		<?php include($IPATH."MostPopular.php"); ?>

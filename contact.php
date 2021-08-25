@@ -2,7 +2,17 @@
 <html>
 <head>
 <title>Abditory | Contact  Us</title>
+	<script>
+	function validate()
+	{
+		if((document.contactForm.firstName.value=="")||(document.contactForm.lastName.value=="")||(document.contactForm.email.value=="")||(document.contactForm.message.value==""))
+		{
+			window.alert("Fields are empty!");
+			return(false);
+		}
+	}
 	
+	</script>
 	<!--- php call for globalHeader.html----->
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/"; include($IPATH."globalHeader.php"); ?>
 	<!-- Page Content --->
@@ -31,7 +41,7 @@
 				<h3 id="contactTitles">Message</h3>
 				<textarea id="contactFieldTA" name="message" placeholder="Your message goes here!" rows="10" cols="50"></textarea>
 				<br><br><br>
-				<input id="contactFieldBTN" name="submit" type="submit" value="Send">
+				<input id="contactFieldBTN" name="submit" type="submit" value="Send" onClick="return validate()">
 			</form>
 		</div>
 	</div>

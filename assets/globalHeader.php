@@ -22,6 +22,17 @@
 	<!--- CSS for Footer -->
 	<link rel="stylesheet" type="text/css" href="../CSS/globalFooter.css">
 
+	<script>
+	function searchValidate()
+	{
+		if(document.seachBoxForm.searchTerm.value=="")
+		{
+			window.alert("Search Field is empty!");
+			return(false);
+		}
+	}
+	
+	</script>
 </head>
 <body>
 
@@ -63,7 +74,7 @@
 					<table id="searchTable">
 						<tr>
 							<td>
-								<button type="submit" id="searchBtn"><img src="../Image/searchIcon.png"></button>
+								<button type="submit" id="searchBtn" onClick="return searchValidate()"><img src="../Image/searchIcon.png"></button>
 							</td>
 							<td>
 								<input id="searchBox" name="searchTerm" type="search" placeholder="Search">

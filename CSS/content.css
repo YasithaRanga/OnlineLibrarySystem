@@ -3,7 +3,83 @@ body{
 	background-repeat: no-repeat;
  	background-size: cover;
 	background-position: center;
+	
 }
+.sectionBOD{
+	display: flex;
+}
+#mainTitleBOD{
+	font-size: 50px;
+	font-family: arial;
+	color: black;
+}
+#leftSectionBOD{
+	width: 50%;
+	align-items: center;
+	background-color: rgba(255,255,255,0.5);
+	margin: auto;
+	padding:0px 0px 50px 50px;
+	border-radius: 50px;
+	margin-right: 50px;
+}
+#rightSectionBOD{
+	width: 50%;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	margin: auto;
+	padding:10px 50px 100px;
+	border-radius: 50px;
+}
+#BODTitle{
+	font-family: arial;
+	font-size: 90px;
+	color: white;
+}
+.userButtonsBOD{
+	align-items: center;
+	margin-left: 10px;
+	width: 360px;
+	display: flex;
+}
+.userButtonsBOD a{
+	text-decoration: none;
+}
+
+#btnDownloadBOD{
+	margin: 10px 5px 10px auto;
+	background-color: white;
+	padding: 20px;
+	color: black;
+	border-radius: 5px;
+	border-style: none;
+	transition: ease 500ms;
+	font-size: 40px;
+	display: block;
+}
+#btnDownloadBOD:hover{
+	background-color: black;
+	color: white;
+	transition: ease 500ms;
+	font-weight: bolder;
+}
+#btnReadBOD{
+	margin: 10px auto 10px 5px;
+	background-color: white;
+	padding: 20px;
+	color: black;
+	border-radius: 5px;
+	border-style: none;
+	transition: ease 500ms;
+	font-size: 40px;
+	display: block;
+}
+#btnReadBOD:hover{
+	background-color: black;
+	color: white;
+	transition: ease 500ms;
+	font-weight: bolder;
+}
+
 #searchError{
 	color: white;
 	font-family: arial;
