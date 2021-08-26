@@ -12,7 +12,7 @@
 		
 		<div class="image-slider">
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=5";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -39,7 +39,7 @@
 			
 				
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=7";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -65,7 +65,7 @@
 			?>
 			
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=3";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -91,7 +91,7 @@
 			?>
 			
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=6";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -117,7 +117,7 @@
 			?>
 			
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=4";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -143,7 +143,7 @@
 			?>
 			
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=2";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
@@ -169,7 +169,7 @@
 			?>
 			
 			<?php
-			require 'database/dbconfig.php';
+			require 'Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=1";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;

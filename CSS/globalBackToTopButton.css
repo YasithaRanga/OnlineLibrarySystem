@@ -28,18 +28,3 @@ html{
 	font-size: 51px;
 	transition: ease 500ms;
 }
-
-@media all and (max-width: 480px){
-	#backToTopBtn{
-		width: 40px;
-		height: 40px;
-		font-size: 30px;
-		line-height: 45px;
-		bottom: 10px;
-		right: 10px;
-	}
-	#backToTopBtn:hover{
-		font-size: 31px;
-		line-height: 50px;
-	}
-}

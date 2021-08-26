@@ -15,7 +15,7 @@
 	
 	<div class="sectionBOD" id="bookOfTheDay">
 		<?php
-			require 'assets/database/dbconfig.php';
+			require 'assets/Database/dbconfig.php';
 			$query = "SELECT * FROM books WHERE bookID=10";
 			$query_run = mysqli_query($connection,$query);
 			$check_abditoryPicks = mysqli_num_rows($query_run)>0;
