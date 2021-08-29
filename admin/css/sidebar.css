@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.sidebarContainer{
+	height: 900px;
+	width: 200px;
+	background-color: black;
+	padding: 30px;
+	position: fixed;
+}
+
+.logoAndTitle{
+	display: block;
+	width: 200px;
+	color: white;
+	font-family: arial;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.logoBlock{
+	width: 200px;
+}
+.logoBlock img{
+	width: 200px;
+}
+.menuList{
+	list-style: none;
+	text-align: left;
+	width: 200px;
+}
+.menuItem{
+	width:200px;
+	margin-left: -30px;
+}
+.menuItem a:hover{
+	background-color: white;
+	color:black;
+	padding: 15px;
+	border-radius: 10px;
+	transition: ease 500ms;
+}
+.menuItem a{
+	color: white;
+	font-family: arial;
+	text-decoration: none;
+	font-size: 20px;
+	transition: ease 500ms;
+	
+}
+.menuLine{
+	opacity: 0.5;
+	text-align: center;
+	width: 200px;
+	margin: 20px 50px 20px -40px;
+	
+}
+.logoutContainer{
+	width: 200px;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+}
+.btnLogout{
+	border-style: none;
+	font-size: 20px;
+	padding: 20px;
+	width: 75%;
+	border-radius: 20px;
+	font-weight: bolder;
+	transition: ease 500ms;
+}
+.btnLogout:hover{
+	background-color: #111111;
+	color: white;
+	transition: ease 500ms;
+	
+}
