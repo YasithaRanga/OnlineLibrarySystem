@@ -63,11 +63,6 @@
 						<a href="../contact.php">Contact Us</a>
 					</li>
 				</ul>
-				<div class="globalMenu" id="toggleBtn">
-					<div class="menuLine"></div>
-					<div class="menuLine"></div>
-					<div class="menuLine"></div>
-				</div>
 			</div>
 			<div class="navSearch">
 				<form name="seachBoxForm" id="searchBoxForm" method="post" action="../search.php">

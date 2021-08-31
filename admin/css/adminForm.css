@@ -1,0 +1,89 @@
+.adminFormContainer{
+	z-index: 10001;
+	width:400px;
+	position: absolute;
+	background-color: #1E1E1E;
+	height: 500px;
+	top:20%;
+	left:45%;
+	padding:40px 0px 80px 60px;
+	color: white;
+	font-family: arial;
+	border-radius: 20px;
+	visibility: hidden;
+}
+.adminAdd .show{
+	visibility: visible;
+  	animation: fadeIn 500ms;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.adminFormTitle{
+	font-size: 30px;
+}
+.adminAddForm{
+}
+#adminInput{
+	width: 75%;
+	height: 35px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: 500ms ease;
+}
+#adminInput:focus{
+	outline: none;
+	background-color: black;
+	color:white;
+	transition: 500ms ease;
+}
+#adminInput::placeholder{
+	font-size: 20px;
+}
+
+#btnAdminSubmit{
+	border: none;
+	background-color: mediumseagreen;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	outline: none;
+}
+
+#btnAdminSubmit:hover{
+	background-color: lime;
+	color:black;
+	transition: 500ms ease;
+	outline: none;
+}
+#adminCancel{
+	border: none;
+	background-color: darkred;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	margin-left: 10px;
+	outline: none;
+}
+#adminCancel:hover{
+	outline: none;
+	background-color: red;
+	color:white;
+	transition: 500ms ease;
+}

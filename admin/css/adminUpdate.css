@@ -1,0 +1,78 @@
+.adminUpdateContainer{
+	width:400px;
+	height: 500px;
+	top:25%;
+	left:45%;
+	padding:40px 0px 40px 60px;
+	color: black;
+	font-family: arial;
+	border-radius: 20px;
+	visibility: visible;
+}
+.adminUpdateFormTitle{
+	font-size: 30px;
+}
+.adminUpdateForm{
+}
+#adminUpdateInput{
+	width: 75%;
+	height: 35px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: black;
+	transition: 500ms ease;
+	color: white;
+}
+#adminUpdateInput:focus{
+	outline: none;
+	background-color: white;
+	color:black;
+	transition: 500ms ease;
+}
+#adminUpdateInput::placeholder{
+	font-size: 20px;
+}
+
+#btnAdminUpdate{
+	border: none;
+	background-color: mediumseagreen;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	outline: none;
+}
+
+#btnAdminUpdate:hover{
+	background-color: #084603;
+	color:white;
+	transition: 500ms ease;
+	outline: none;
+}
+#adminUpdateCancel{
+	border: none;
+	background-color: red;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	margin-left: 10px;
+	outline: none;
+}
+#adminUpdateCancel:hover{
+	outline: none;
+	background-color: darkred;
+	color:white;
+	transition: 500ms ease;
+}

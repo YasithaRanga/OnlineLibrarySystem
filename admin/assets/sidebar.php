@@ -12,26 +12,26 @@
 		<div class="menuLinks">
 			<ul class="menuList">
 				<li class="menuItem">
-					<a href="#admins">Administrators</a>
+					<a href="../admin/dashboard.php#admins">Administrators</a>
 				</li>
 				<hr class="menuLine">
 				<li class="menuItem">
-					<a href="#books">Books</a>
+					<a href="../admin/dashboard.php#books">Books</a>
 				</li>
 				<hr class="menuLine">
 				<li class="menuItem">
-					<a href="#catergories">Categories</a>
+					<a href="../admin/dashboard.php#catergories">Categories</a>
 				</li>
 				<hr class="menuLine">
 				<li class="menuItem">
-					<a href="#sections">Featured Sections</a>
+					<a href="../admin/dashboard.php#sections">Featured Sections</a>
 				</li>
 			</ul>
 		</div>
 		<div class="logoutContainer">
-			<button class="btnLogout">Logout</button>
+			<form action="../admin/assets/adminLogout.php" name="formLogout" method="post">
+				<button class="btnLogout" name="btn_logout">Logout</button>
+			</form>
 		</div>
 	</div>
-
-
-<link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css">

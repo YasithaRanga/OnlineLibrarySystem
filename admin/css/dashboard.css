@@ -1,0 +1,111 @@
+
+.welcomeMsg{
+	font-family: arial;
+	color: black;
+}
+.content{
+	width: 84%;
+	padding: 20px;
+	float: right;
+	overflow-x: hidden; 
+}
+.adminsManager{
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.39);
+}
+
+.adminAdd{
+	margin: auto;
+	width:95%;
+	background-color: black;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	outline: none;
+}
+
+.btnAdminAdd{
+	border-style: none;
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.adminAddStatus{
+	padding:20px;
+	font-size: 18px;
+	color:white;
+	margin-left: 30px;
+	font-family: arial;
+}
+
+.btnAdminAdd:hover{
+	background-color: #222222;
+	color:white;
+}
+
+.adminDataTable{
+	margin: 20px auto 20px auto;
+	padding-bottom: 20px;
+	width:95%;
+}
+.TitleRow{
+	font-size: 20px;
+	font-family: arial;
+}
+.TitleHeader{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.dataRow{
+	font-size: 20px;
+	font-family: arial;
+	color:black;
+}
+.dataCell{
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.dataCell .btnEdit{
+	background-color: seagreen;
+	color:white;
+	padding: 20px;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 20px;
+	width:100px;
+	cursor: pointer;
+	transform: ease 500ms;
+}
+
+.dataCell .btnEdit:hover{
+	transform: ease 500ms;
+	background-color: #005701;
+}
+
+.dataCell .btnDelete{
+	background-color: #FF3538;
+	color:white;
+	padding: 20px;
+	border-style: none;
+	border-radius: 10px;
+	font-size: 20px;
+	width:100px;
+	cursor: pointer;
+	transform: ease 500ms;
+}
+
+.dataCell .btnDelete:hover{
+	transform: ease 500ms;
+	background-color: #930002;
+}
+
+
+.sectionTitle{
+	font-family: arial;
+	padding: 20px 0px 0px 20px;
+}

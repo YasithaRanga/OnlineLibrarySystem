@@ -5,10 +5,11 @@ body{
 }
 .sidebarContainer{
 	height: 900px;
-	width: 200px;
+	width: 11%;
 	background-color: black;
 	padding: 30px;
 	position: fixed;
+	z-index: 1000;
 }
 
 .logoAndTitle{
