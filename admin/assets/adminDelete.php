@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	include 'adminSecurity.php';
 	require 'dbpath.php';
 
 	if(isset($_POST['delete_btn']))

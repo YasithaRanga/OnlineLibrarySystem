@@ -1,3 +1,6 @@
+<?php
+	include 'assets/adminSecurity.php';
+?>
 	<div class="sidebarContainer">
 		<div class="logoAndTitle">
 			<div class="logoBlock">

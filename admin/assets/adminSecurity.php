@@ -4,6 +4,4 @@
 	{
 		header('Location: ../admin');
 	}
-	
-
 ?>

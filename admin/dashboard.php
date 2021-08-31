@@ -1,5 +1,4 @@
 <?php 
-	include 'assets/adminSecurity.php';
 	include 'assets/globalHeader.php';
 ?>
 
