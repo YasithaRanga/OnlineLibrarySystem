@@ -8,7 +8,7 @@
 		<div class="adminsManager" id="admins">
 			<h1 class="sectionTitle">Administrators</h1>
 			<div class="adminAdd">	
-				<button class="btnAdminAdd" onClick="popUp()">Add Administrator</button>
+				<button class="btnAdminAdd" onClick="popUpAdmin()">Add Administrator</button>
 				<div class="adminAddStatus">
 						<?php
 							if(isset($_SESSION['adminSuccess'])&& $_SESSION['adminSuccess']!="")
@@ -73,4 +73,77 @@
 			</table>
 		
 		</div>
+
+
+		<div class="booksManager" id="books">
+			<h1 class="sectionTitle">Books</h1>
+			<div class="bookAdd">	
+				<button class="btnBookAdd" onClick="popUpBook()">Add a Book</button>
+				<div class="bookAddStatus">
+						<?php
+							if(isset($_SESSION['bookSuccess'])&& $_SESSION['bookSuccess']!="")
+							{
+								echo $_SESSION['bookSuccess'];
+								unset($_SESSION['bookSuccess']);
+							}
+							if(isset($_SESSION['bookStatus'])&& $_SESSION['bookStatus']!="")
+							{
+								echo $_SESSION['bookStatus'];
+								unset($_SESSION['bookStatus']);
+							}
+						?>
+				</div>
+				<?php include($IPATH."bookForm.php") ?>
+			</div>
+			<table class="bookDataTable">
+				<tr class="TitleRow">
+					<th class="TitleHeader">ID</th>
+					<th class="TitleHeader">Name</th>
+					<th class="TitleHeader">Category</th>
+					<th class="TitleHeader">Image</th>
+					<th class="TitleHeader">Edit</th>
+					<th class="TitleHeader">Delete</th>
+				</tr>
+			<?php 
+				
+				require 'assets/dbpath.php';
+				$query = "SELECT * FROM testbooks";
+				$query_run = mysqli_query($connection, $query);
+				$check_books = mysqli_num_rows($query_run) > 0;
+				if($check_books)
+				{
+					while($row = mysqli_fetch_array($query_run))
+					{
+					?>
+						<tr class="dataRow">
+							<td class="dataCell"><?php echo $row['bookID'];?></td>
+							<td class="dataCell"><?php echo $row['bookName'];?></td>
+							<td class="dataCell"><?php echo $row['category'];?></td>
+							<td class="dataCell"><img width="80px" src="../resources/pdf/coverpage/<?php echo $row['image'];?>"></td>
+							<td class="dataCell">
+								<form action="bookUpdate.php" method="post">
+									<input type="hidden" name="editBook_ID" value="<?php echo $row['bookID'];?>">
+									<button class="btnEdit" name="editBook_btn">Edit</button>
+								</form>
+							</td>
+							<td class="dataCell">
+								<form action="assets/bookDelete.php" method="post">
+									<input type="hidden" name="deleteBook_ID" value="<?php echo $row['bookID'];?>">
+									<button class="btnDelete" name="deleteBook_btn">Delete</button>
+								</form>
+							</td>
+						</tr>						
+					<?php
+					}
+				}
+				else
+				{	
+					$_SESSION['bookStatus'] = "No Record Found";
+				}
+				?>
+				
+			</table>
+		
+		</div>
+
 <?php include 'assets/globalFooter.php';?>

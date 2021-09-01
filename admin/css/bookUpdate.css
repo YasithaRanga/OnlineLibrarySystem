@@ -1,0 +1,100 @@
+.bookUpdateContainer{
+	width:400px;
+	height: 750px;
+	top:25%;
+	left:45%;
+	padding:40px 0px 40px 60px;
+	color: black;
+	font-family: arial;
+	border-radius: 20px;
+	visibility: visible;
+}
+.bookUpdateFormTitle{
+	font-size: 30px;
+}
+.bookUpdateForm{
+}
+#bookUpdateInput{
+	width: 75%;
+	height: 35px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	background-color: black;
+	transition: 500ms ease;
+	color: white;
+}
+#bookUpdateInput:focus{
+	outline: none;
+	background-color: white;
+	color:black;
+	transition: 500ms ease;
+}
+#bookUpdateInput::placeholder{
+	font-size: 20px;
+}
+
+#btnBookUpdate{
+	border: none;
+	background-color: mediumseagreen;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	outline: none;
+}
+
+#btnBookUpdate:hover{
+	background-color: #084603;
+	color:white;
+	transition: 500ms ease;
+	outline: none;
+}
+#bookUpdateCancel{
+	border: none;
+	background-color: red;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	margin-left: 10px;
+	outline: none;
+}
+#bookUpdateCancel:hover{
+	outline: none;
+	background-color: darkred;
+	color:white;
+	transition: 500ms ease;
+}
+#bookUpdateCategorySelect{
+	width: 75%;
+	height: 50px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: 500ms ease;
+	background-color: black;
+	color:white;
+}
+
+#bookUpdateCategorySelect:focus{
+	outline: none;
+	background-color: white;
+	color:black;
+	transition: 500ms ease;
+}

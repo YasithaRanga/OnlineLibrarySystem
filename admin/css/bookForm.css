@@ -1,10 +1,10 @@
-.adminFormContainer{
+.bookFormContainer{
 	z-index: 10001;
 	width:400px;
 	position: fixed;
 	background-color: #1E1E1E;
-	height: 500px;
-	top:20%;
+	height: 750px;
+	top:2.5%;
 	left:45%;
 	padding:40px 0px 80px 60px;
 	color: white;
@@ -12,7 +12,7 @@
 	border-radius: 20px;
 	visibility: hidden;
 }
-.adminAdd .show{
+.bookAdd .show{
 	visibility: visible;
   	animation: fadeIn 500ms;
 }
@@ -22,12 +22,12 @@
   to {opacity:1 ;}
 }
 
-.adminFormTitle{
+.bookFormTitle{
 	font-size: 30px;
 }
-.adminAddForm{
+.bookAddForm{
 }
-#adminInput{
+#bookInput{
 	width: 75%;
 	height: 35px;
 	margin-top: -10px;
@@ -40,17 +40,38 @@
 	font-weight: bolder;
 	transition: 500ms ease;
 }
-#adminInput:focus{
+#bookInput:focus{
 	outline: none;
 	background-color: black;
 	color:white;
 	transition: 500ms ease;
 }
-#adminInput::placeholder{
+#bookInput::placeholder{
 	font-size: 20px;
 }
 
-#btnAdminSubmit{
+#bookCategorySelect{
+	width: 75%;
+	height: 50px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: 500ms ease;
+}
+
+#bookCategorySelect:focus{
+	outline: none;
+	background-color: black;
+	color:white;
+	transition: 500ms ease;
+}
+
+#btnBookSubmit{
 	border: none;
 	background-color: mediumseagreen;
 	font-size: 20px;
@@ -62,13 +83,13 @@
 	outline: none;
 }
 
-#btnAdminSubmit:hover{
+#btnBookSubmit:hover{
 	background-color: lime;
 	color:black;
 	transition: 500ms ease;
 	outline: none;
 }
-#adminCancel{
+#bookCancel{
 	border: none;
 	background-color: darkred;
 	font-size: 20px;
@@ -81,7 +102,7 @@
 	margin-left: 10px;
 	outline: none;
 }
-#adminCancel:hover{
+#bookCancel:hover{
 	outline: none;
 	background-color: red;
 	color:white;

@@ -2,12 +2,12 @@
 	include 'adminSecurity.php';
 ?>
 <script>
-		function popUp()
+		function popUpAdmin()
 		{
 			var popup = document.getElementById("adminFormContainer");
 			popup.classList.toggle("show");
 		}
-		function validate()
+		function validateAdmin()
 		{
 			if((document.adminAddForm.adminUsername.value=="")||(document.adminAddForm.adminPassword.value=="")||(document.adminAddForm.adminConfirmPassword.value==""))
 				{
@@ -31,8 +31,8 @@
 		<h2 id="adminAddTitle">Confirm Password</h2>
 		<input id="adminInput" type="password" name="adminConfirmPassword" placeholder="Confirm Password">
 		<br><br>
-		<input type="submit" id="btnAdminSubmit" name="adminSubmit" onClick="return validate()">
-		<button id="adminCancel" name="adminCancel" onClick="popUp()">Cancel</button>
+		<input type="submit" id="btnAdminSubmit" name="adminSubmit" onClick="return validateAdmin()">
+		<button id="adminCancel" name="adminCancel" onClick="popUpAdmin()">Cancel</button>
 	</form>
 </div>
 	

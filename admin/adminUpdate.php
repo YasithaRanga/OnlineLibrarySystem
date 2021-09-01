@@ -2,16 +2,11 @@
 	include 'assets/globalHeader.php';
 ?>
 <script>
-			function validate()
+			function validateAdminUpdate()
 			{
-				if((document.adminUpdateForm.adminUsername.value=="")||(document.adminUpdateForm.adminPassword.value=="")||(document.adminUpdateForm.adminConfirmPassword.value==""))
+				if((document.adminUpdateForm.edit_adminUsername.value=="")||(document.adminUpdateForm.edit_adminPassword.value==""))
 				{
 					window.alert("Fields are empty");
-					return(false);
-				}
-			if(!(document.adminAddForm.adminPassword.value==document.adminAddForm.adminConfirmPassword.value))
-				{
-					window.alert("Passwords do not match");
 					return(false);
 				}
 			}
@@ -38,7 +33,7 @@
 						<h2 id="adminUpdateTitle">Password</h2>
 						<input id="adminUpdateInput" type="password" name="edit_adminPassword" placeholder="Password" value="<?php echo $row['password'];?>">
 						<br><br><br>
-						<input type="submit" id="btnAdminUpdate" name="adminUpdate_btn" value="Update" onClick="return validate()">
+						<input type="submit" id="btnAdminUpdate" name="adminUpdate_btn" value="Update" onClick="return validateAdminUpdate()">
 						<button id="adminUpdateCancel" name="adminUpdateCancel_btn">Cancel</button>
 						
 					</form>

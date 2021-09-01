@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
 	<link rel="stylesheet" type="text/css" href="css/adminForm.css">
 	<link rel="stylesheet" type="text/css" href="css/adminUpdate.css">
+	<link rel="stylesheet" type="text/css" href="css/bookForm.css">
+	<link rel="stylesheet" type="text/css" href="css/bookUpdate.css">
+	
 	
 </head>
 <body>
