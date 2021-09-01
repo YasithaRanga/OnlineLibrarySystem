@@ -24,7 +24,7 @@
 	
 		if($validate_img_extension)
 		{
-			$image_query = "SELECT * FROM testbooks WHERE bookID='$id'";
+			$image_query = "SELECT * FROM books WHERE bookID='$id'";
 			$image_query_run = mysqli_query($connection, $image_query);
 			foreach($image_query_run as $image_row)
 			{
@@ -42,7 +42,7 @@
 				}
 			}
 			
-			$query = "UPDATE testbooks SET bookName='$bName', category='$bCategory', image='$image_data', downloadLink='$bDownLink', readLink='$bReadLink' WHERE bookID='$id'";
+			$query = "UPDATE books SET bookName='$bName', category='$bCategory', image='$image_data', downloadLink='$bDownLink', readLink='$bReadLink' WHERE bookID='$id'";
 			$query_run = mysqli_query($connection, $query);
 	
 			if($query_run)

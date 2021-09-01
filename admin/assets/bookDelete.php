@@ -6,10 +6,10 @@
 	{
 		$id = $_POST['deleteBook_ID'];
 		
-		$image_query = "SELECT * FROM testbooks WHERE bookID='$id'";
+		$image_query = "SELECT * FROM books WHERE bookID='$id'";
 		$image_query_run = mysqli_query($connection, $image_query);
 		
-		$query = "DELETE FROM testbooks WHERE bookID='$id'";
+		$query = "DELETE FROM books WHERE bookID='$id'";
 		$query_run = mysqli_query($connection,$query);
 		
 		

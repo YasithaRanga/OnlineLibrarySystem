@@ -29,7 +29,7 @@ if(isset($_POST['bookSubmit']))
 		}
 		else
 		{
-			$query = "INSERT INTO testbooks (bookName,category,image,downloadLink,readLink) VALUES('$bName','$bCategory','$bcImage','$bDownLink','$bReadLink')";
+			$query = "INSERT INTO books (bookName,category,image,downloadLink,readLink) VALUES('$bName','$bCategory','$bcImage','$bDownLink','$bReadLink')";
 			$query_run = mysqli_query($connection, $query);
 
 			if($query_run)

@@ -107,7 +107,7 @@
 			<?php 
 				
 				require 'assets/dbpath.php';
-				$query = "SELECT * FROM testbooks";
+				$query = "SELECT * FROM books";
 				$query_run = mysqli_query($connection, $query);
 				$check_books = mysqli_num_rows($query_run) > 0;
 				if($check_books)

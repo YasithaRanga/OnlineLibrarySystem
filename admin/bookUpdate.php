@@ -21,7 +21,7 @@
 				{
 					$id = $_POST['editBook_ID'];
 
-					$query = "SELECT * FROM testbooks WHERE bookID='$id'";
+					$query = "SELECT * FROM books WHERE bookID='$id'";
 					$query_run = mysqli_query($connection, $query);
 
 					foreach($query_run as $row)
