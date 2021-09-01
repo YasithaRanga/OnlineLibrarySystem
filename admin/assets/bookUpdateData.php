@@ -20,7 +20,8 @@
 			
 		$validate_img_extension = $_FILES['bookUpdateCoverImage']['type']=="image/jpg"||
 							$_FILES['bookUpdateCoverImage']['type']=="image/png"||
-							$_FILES['bookUpdateCoverImage']['type']=="image/jpeg";
+							$_FILES['bookUpdateCoverImage']['type']=="image/jpeg"||
+							$_FILES['bookUpdateCoverImage']['type']=="";
 	
 		if($validate_img_extension)
 		{
