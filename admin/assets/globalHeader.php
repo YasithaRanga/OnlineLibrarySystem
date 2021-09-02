@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="css/adminUpdate.css">
 	<link rel="stylesheet" type="text/css" href="css/bookForm.css">
 	<link rel="stylesheet" type="text/css" href="css/bookUpdate.css">
+	<link rel="stylesheet" type="text/css" href="css/categoryForm.css">
+	<link rel="stylesheet" type="text/css" href="css/categoryUpdate.css">
 	
 	
 </head>

@@ -110,6 +110,111 @@ html{
 	width:95%;
 }
 
+/* Category Section */
+
+.categoryManager{
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.39);
+}
+
+.categoryAdd{
+	margin: auto;
+	width:95%;
+	background-color: black;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	outline: none;
+}
+
+.btnCategoryAdd{
+	border-style: none;
+	padding: 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+	width: 20%;
+}
+
+.categoryAddStatus{
+	padding:20px;
+	font-size: 18px;
+	color:white;
+	margin-left: 30px;
+	font-family: arial;
+	width: 80%;
+}
+
+.btnCategoryAdd:hover{
+	background-color: #222222;
+	color:white;
+}
+
+.categoryDataTable{
+	margin: 20px auto 20px auto;
+	padding-bottom: 20px;
+	width:95%;
+}
+
+
+/* Featured Sections */
+
+.fSectionManager{
+	justify-content: center;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.39);
+}
+
+.fSectionAdd{
+	margin: auto;
+	width:95%;
+	background-color: black;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	outline: none;
+}
+
+
+.fSectionAddStatus{
+	padding-top: 25px;
+	font-size: 18px;
+	color:white;
+	margin-left: 30px;
+	font-family: arial;
+	width: 70%;
+}
+
+
+.fSectionDataTable{
+	margin: 20px auto 20px auto;
+	padding-bottom: 20px;
+	width:95%;
+}
+
+
+#SelectOption{
+	width: 75%;
+	height: 50px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: 500ms ease;
+}
+
+#SelectOption:focus{
+	outline: none;
+	background-color: black;
+	color:white;
+	transition: 500ms ease;
+}
 
 
 
@@ -171,4 +276,9 @@ html{
 .sectionTitle{
 	font-family: arial;
 	padding: 20px 0px 0px 20px;
+}
+.sectionSubTitle{
+	color: white;
+	font-family: arial;
+	padding-left: 20px;
 }

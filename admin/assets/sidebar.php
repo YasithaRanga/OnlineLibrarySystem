@@ -23,7 +23,7 @@
 				</li>
 				<hr class="menuLine">
 				<li class="menuItem">
-					<a href="../admin/dashboard.php#catergories">Categories</a>
+					<a href="../admin/dashboard.php#categories">Categories</a>
 				</li>
 				<hr class="menuLine">
 				<li class="menuItem">

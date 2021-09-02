@@ -29,8 +29,8 @@
 				require 'assets/dbpath.php';
 				$query = "SELECT * FROM categories";
 				$query_run = mysqli_query($connection, $query);
-				$check_category = mysqli_num_rows($query_run) > 0;
-				if($check_category)
+				$check_books = mysqli_num_rows($query_run) > 0;
+				if($check_books)
 				{
 					while($row = mysqli_fetch_array($query_run))
 					{

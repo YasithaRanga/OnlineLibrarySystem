@@ -1,0 +1,89 @@
+.categoryFormContainer{
+	z-index: 10001;
+	width:400px;
+	position: fixed;
+	background-color: #1E1E1E;
+	height: 500px;
+	top:15%;
+	left:45%;
+	padding:40px 0px 80px 60px;
+	color: white;
+	font-family: arial;
+	border-radius: 20px;
+	visibility: hidden;
+}
+.categoryAdd .show{
+	visibility: visible;
+  	animation: fadeIn 500ms;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.categoryFormTitle{
+	font-size: 30px;
+}
+.categoryAddForm{
+}
+#categoryInput{
+	width: 75%;
+	height: 35px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	transition: 500ms ease;
+}
+#categoryInput:focus{
+	outline: none;
+	background-color: black;
+	color:white;
+	transition: 500ms ease;
+}
+#categoryInput::placeholder{
+	font-size: 20px;
+}
+
+#btnCategorySubmit{
+	border: none;
+	background-color: mediumseagreen;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	outline: none;
+}
+
+#btnCategorySubmit:hover{
+	background-color: lime;
+	color:black;
+	transition: 500ms ease;
+	outline: none;
+}
+#categoryCancel{
+	border: none;
+	background-color: darkred;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 150px;
+	transition: 500ms ease;
+	cursor: pointer;
+	margin-left: 10px;
+	outline: none;
+}
+#categoryCancel:hover{
+	outline: none;
+	background-color: red;
+	color:white;
+	transition: 500ms ease;
+}
