@@ -7,7 +7,6 @@ if(isset($_POST['categorySubmit']))
 {
 	$cName = $_POST['categoryName'];
 	$ccImage = $_FILES['categoryCoverImage']['name'];
-	$cLink = $_POST['categoryLink'];
 	
 	$validate_img_extension = $_FILES['categoryCoverImage']['type']=="image/jpg"||
 							$_FILES['categoryCoverImage']['type']=="image/png"||
@@ -26,7 +25,7 @@ if(isset($_POST['categorySubmit']))
 		}
 		else
 		{
-			$query = "INSERT INTO categories (category,link,image) VALUES('$cName','$cLink','$ccImage')";
+			$query = "INSERT INTO categories (category,image) VALUES('$cName','$ccImage')";
 			$query_run = mysqli_query($connection, $query);
 
 			if($query_run)

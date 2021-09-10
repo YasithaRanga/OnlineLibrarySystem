@@ -4,7 +4,7 @@
 <script>
 			function validateCategoryUpdate()
 			{
-				if((document.categoryUpdateForm.categoryUpdateName.value=="")||(document.categoryUpdateForm.categoryUpdateLink.value==""))
+				if(document.categoryUpdateForm.categoryUpdateName.value=="")
 				{
 					window.alert("Fields are empty");
 					return(false);
@@ -33,8 +33,6 @@
 						<input id="categoryUpdateInput" type="text" name="categoryUpdateName" placeholder="Category Name" value="<?php echo $row['category'];?>">
 						<h2 id="categoryUpdateTitle">Category Image</h2>
 						<input id="categoryUpdateInput" type="file" name="categoryUpdateCoverImage" placeholder="Cover Image">
-						<h2 id="categoryUpdateTitle">Page Link</h2>
-						<input id="categoryUpdateInput" type="text" name="categoryUpdateLink" placeholder="Category Page Link" value="<?php echo $row['link'];?>">
 						<br><br><br>
 						<input type="submit" id="btnCategoryUpdate" name="categoryUpdate_btn" value="Update" onClick="return validateCategoryUpdate()">
 						<button id="categoryUpdateCancel" name="categoryUpdateCancel_btn">Cancel</button>						

@@ -28,12 +28,15 @@
 								<img src="categories/images/<?php echo $row['image']; ?>" width="85%" height="100%">
 							</div>
 							<div class="categoryName">
-								<h2><?php echo $row['category'] ?></h2>
+								<h2><?php echo $row['category']; ?></h2>
 							</div>
 							<div class="categoryButton">
-								<a href="<?php echo $row['link'] ?>">
-									<button class="categoryLink">Show Books</button>
-								</a>
+								
+									<form name="categoryForm" method="post" action="/categories/result.php">
+										<input type="hidden" name="categoryName" value="<?php echo $row['category'];?>">
+										<button class="categoryLink" name="categoryBtn">Show Books</button>
+									</form>
+								
 							</div>
 						</div>
 						

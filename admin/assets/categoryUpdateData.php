@@ -14,7 +14,6 @@
 		$id = $_POST['editCategory_ID'];
 		$cName = $_POST['categoryUpdateName'];
 		$ccImage = $_FILES['categoryUpdateCoverImage']['name'];
-		$cLink = $_POST['categoryUpdateLink'];
 			
 		$validate_img_extension = $_FILES['categoryUpdateCoverImage']['type']=="image/jpg"||
 							$_FILES['categoryUpdateCoverImage']['type']=="image/png"||
@@ -41,7 +40,7 @@
 				}
 			}
 			
-			$query = "UPDATE categories SET category='$cName', image='$image_data', link='$cLink' WHERE categoryID='$id'";
+			$query = "UPDATE categories SET category='$cName', image='$image_data' WHERE categoryID='$id'";
 			$query_run = mysqli_query($connection, $query);
 	
 			if($query_run)
